@@ -1,0 +1,23 @@
+<style>
+.block-container {max-width: 1120px; padding-top: 3.25rem;}
+.studio-hero {
+  background: radial-gradient(ellipse at 85% 0%, #743799, transparent 55%),
+              linear-gradient(125deg, #211742, #422367 65%, #563182);
+  color: #fff; display: flex; justify-content: space-between; align-items: center;
+  overflow: hidden; padding: clamp(1.5rem, 5vw, 3.5rem); border-radius: 26px;
+  margin-bottom: 1.5rem; border: 1px solid #9e67ae; gap: 1.25rem;
+}
+.studio-label {color: #f3bdff; letter-spacing: .21em; font-weight: 700; font-size: .75rem;}
+.studio-hero h1 {color: white; font-size: clamp(3rem, 8vw, 5rem); line-height: 1; margin: .3rem 0 .7rem; padding: 0;}
+.studio-hero p {color: #f1e4fc; font-size: 1.04rem; margin: 0;}
+.studio-wave {display: flex; gap: clamp(.2rem, 1vw, .65rem); align-items: center; height: 8rem;}
+.studio-wave i {width: clamp(.25rem, 1.1vw, .8rem); border-radius: 1rem; background: linear-gradient(#ffe1a8, #f6a2ed 65%, #9f79fc); height: 34%;}
+.studio-wave i:nth-child(2n) {height: 52%;}
+.studio-wave i:nth-child(3n) {height: 72%;}
+.studio-wave i:nth-child(5) {height: 98%;}
+.studio-wave i:nth-child(7) {height: 62%;}
+@media (max-width: 520px) {
+  .block-container {padding-top: 2.5rem;}
+  .studio-wave {height: 4.5rem;}
+}
+</style>
