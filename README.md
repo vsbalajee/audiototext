@@ -15,7 +15,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-The requirements use the Linux CPU-only PyTorch wheel. For macOS, install the standard PyPI wheel by replacing `torch==2.8.0+cpu` with `torch==2.8.0` and removing the extra index line.
+The requirements select an official CPU-only PyTorch wheel on Linux x86-64 with Python 3.12, 3.13, or 3.14. Other platforms use the standard PyPI PyTorch package.
 
 ## Streamlit Community Cloud
 
