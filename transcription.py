@@ -24,7 +24,7 @@ def decode_audio(data: bytes) -> np.ndarray:
             decoded = subprocess.run(
                 [
                     "ffmpeg", "-nostdin", "-hide_banner", "-loglevel", "error",
-                    "-protocol_whitelist", "file,pipe", "-enable_drefs", "0",
+                    "-protocol_whitelist", "file,pipe",
                     "-format_whitelist", "wav,mp3,mov,mp4,m4a,3gp,3g2,mj2,aac,flac,ogg,matroska,webm,mpeg,asf",
                     "-threads", "1", "-i", source.name,
                     "-map", "0:a:0", "-t", str(MAX_MINUTES * 60 + 1),
